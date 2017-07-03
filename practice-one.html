@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <title>Exemplary-Free Respo</title>
+        <style type="text/css">
+            html * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .container {
+                width: 1220px;
+                margin-left: 420px;
+            }
+
+            .first_div {
+                height: 635px;
+                background-size: cover;
+                background-image: url(../img/bg.png);
+            }
+
+            .header {
+                margin-top: 0px;
+                overflow: hidden;
+            }
+
+            .logo {
+                float: left;
+            }
+
+            .menu {
+                font-size: 15px;
+                float: right;
+            }
+
+            ul.nav li a {
+                text-decoration: none;
+            }
+
+            ul.nav li {
+                margin: 15px;
+            }
+
+            .logo h1 {
+                color: #16b1b5;
+                font-size: 30px;
+                font-family: 'Roboto Slab', serif;
+                padding-top: 25.5px;
+            }
+
+            .menu ul li {
+                float: left;
+            }
+
+            .menu ul li a {
+                color: white;
+            }
+
+            .menu li {
+                padding-top: 20px;
+                display: block;
+                white-space: nowrap;
+            }
+
+            ul.nav li a.active {
+                color: #16b1b5;
+            }
+
+            .head {
+                padding: 20px 0px 100px 0px;
+            }
+
+            .tagline {
+                width: 100%;
+                margin: 0 auto;
+                padding: 200px 0px;
+            }
+
+            .tagline h2 {
+                color: white;
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 1.5;
+                padding-left: 168px;
+                font-family: 'Roboto Slab', sans-serif;
+            }
+
+            .under-tagline p {
+                color: white;
+                font-size: 19px;
+                font-weight: 300;
+                line-height: 34px;
+                margin-top: 25px;
+                padding-left: 168px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            button.mainbutton {
+                background: none repeat scroll 0% 0% transparent;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 10px 25px;
+                color: #FFF;
+                text-transform: uppercase;
+                font-size: 19px;
+                font-family: 'Georgia', serif;
+                font-weight: 300;
+                transition: all 0.3s ease 0s;
+                border-radius: 3px;
+                margin-top: 25px;
+                cursor: pointer;
+                margin-left: 168px;
+            }
+
+            .services {
+                width: 100%;
+                background-image: url(../img/texture-bg.png);
+                float: left;
+            }
+
+            .section-head {
+                padding-top: 100px;
+                padding-bottom: 80px;
+            }
+
+            .section-head h3 {
+                color: #000;
+                font-size: 30px;
+                font-weight: 300;
+                font-family: 'Roboto Slab', serif;
+            }
+
+            .section-head h3 span {
+                font-weight: 400;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .services-list {
+                padding-bottom: 100px;
+                float: left;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            .services-list li {
+                float: left;
+                width: 369px;
+                margin-top: 0px;
+                margin-right: 37.5px;
+                text-align: center;
+            }
+
+            .icon1 {
+                padding-top: 20px;
+                background-position: 2px 0px;
+            }
+
+            .icon2 {
+                padding-top: 20px;
+                background-position: -97px 0px;
+            }
+
+            .icon3 {
+                padding-top: 20px;
+                background-position: -201px 0px;
+            }
+
+            .service-icon {
+                width: 96px;
+                height: 100px;
+                display: inline-block;
+                box-shadow: 0px 4px 0px 0px #ccc;
+                background-image: url(../img/services.png);
+            }
+
+            .services-list h4 {
+                font-size: 20px;
+                padding-top: 30px;
+                color: #3d4351;
+                text-transform: uppercase;
+                font-family: 'Roboto Slab', serif;
+            }
+
+            .services-list p {
+                color: #737373;
+                margin-top: 20px;
+                line-height: 20px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .desc {
+                background-image: url(../img/p.jpg);
+                background-attachment: fixed;
+                cursor: default;
+                padding-top: 100px;
+                float: left;
+                text-align: center;
+                width: 100%;
+            }
+
+            .desc h3 {
+                font-size: 30px;
+                font-weight: 600;
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+                font-family: 'Roboto Slab', serif;
+            }
+
+            .desc p {
+                color: #737373;
+                width: 90%;
+                padding-bottom: 100px;
+                font-size: 20px;
+                line-height: 30px;
+                margin: 25px auto 0px auto;
+                text-shadow: 1px 1px 1px #000;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .fourth-div {
+                height: 800px;
+                background-image: url(../img/texture-bg.png);
+            }
+
+            .fourth h3 {
+                font-size: 30px;
+                padding-top: 70px;
+                padding-left: 18px;
+                font-family: sans-serif;
+            }
+
+            .picture {
+                padding-top: 50px;
+            }
+
+            .picture ul li {
+                padding-top: 20px;
+                margin-left: 20px;
+                float: left;
+                width: 278px;
+                display: block;
+            }
+
+            .picture ul li a img {
+                width: 275px;
+                height: 235px;
+            }
+
+            .work {
+                width: 100px;
+                background-image: url(../img/texture-bg.png);
+                height: 700px;
+            }
+
+            {
+                float: left;
+                margin-bottom: 100px;
+            }
+
+            {
+                color: #737373;
+                font-size: 13px;
+            }
+
+            {
+                color: #3D4351;
+                font-size: 18px;
+                font-family: 'Roboto Slab', serif;
+            }
+
+            {
+                font-size: 30px;
+                padding-top: 80px;
+                padding-bottom: 50px;
+            }
+
+            .studio h3 samp {
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .team li {
+                margin-left: 20px;
+                float: left;
+                display: block;
+                background-color: white;
+            }
+
+            .team li img {
+                width: 275px;
+                height: 245px;
+            }
+
+            .sixth {
+                background-image: url(../img/texture-bg2.png);
+                padding-right: 30px;
+                padding-left: 30px;
+                height: 500px;
+            }
+
+            .touch h3 {
+                padding-top: 70px;
+                margin-bottom: 70px;
+                font-size: 30px;
+                font-family: 'Microsoft JhengHei';
+            }
+
+            .contact-form {
+                padding-bottom: 50px;
+                width: 600px;
+                float: left;
+            }
+
+            form input {
+                padding-bottom: 15px;
+                padding-left: 15px;
+                width: 100%;
+                padding-top: 15px;
+                font-size: 17px;
+                margin-top: 20px;
+                border: 2px solid #F7F6F6;
+                background-color: #F7F6F6;
+            }
+
+            textarea {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 15px;
+                width: 100%;
+                height: 180px;
+                font-size: 17px;
+                margin-top: 20px;
+                font-family: inherit;
+                border: 2px solid #F7F6F6;
+                background-color: #F7F6F6;
+            }
+
+            button.submit {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 15px;
+                width: 100%;
+                margin-top: 20px;
+                font-size: 16px;
+                color: white;
+                border: solid;
+                background-color: #16b1b5;
+            }
+
+            .contact-details {
+                color: gray;
+                float: left;
+                margin-left: 100px;
+            }
+
+            .contact-details p {
+                padding-top: 20px;
+            }
+
+            .contact-details p.address {
+                background-image: url(../img/loc.png);
+                background-repeat: no-repeat;
+            }
+
+            .contact-details p.tel {
+                background-image: url(../img/tel.png);
+                background-repeat: no-repeat;
+            }
+
+            .contact-details p.mail {
+                background-image: url(../img/mail.png);
+                background-repeat: no-repeat;
+            }
+
+            .seventh {
+                width: 100%;
+                background-color: #373A42;
+                float: left;
+                padding: 50px 0px;
+                text-align: center;
+            }
+
+            .copyright {
+                color: #585C65;
+                font-weight: 300;
+                font-size: 14px;
+            }
+
+            .seventh p.copyright a {
+                color: #585C65;
+                text-decoration: none;
+                border-bottom: 1px dotted #585C65;
+            }
+
+            ul.socialmedia {
+                list-style: none;
+                margin-top: 25px;
+            }
+
+            ul.socialmedia li {
+                display: inline-block;
+                color: #585C65;
+                margin-left: 15px;
+                margin-right: 15px;
+                font-size: 26px;
+            }
+
+            ul.socialmedia li a {
+                text-decoration: none;
+                color: #585C65;
+                font-size: 26px;
+            }
+
+            a [class^="icon-"],
+            a [class*=" icon-"] {
+                display: inline;
+            }
+
+            i.icon-twitter {
+                transition: all 0.3s;
+            }
+
+            [class^="icon-"],
+            [class*=" icon-"] {
+                width: auto;
+                height: auto;
+                line-height: normal;
+                vertical-align: baseline;
+                background-image: none;
+                background-position: 0% 0%;
+                background-repeat: repeat;
+                margin-top: 0;
+            }
+
+            [class^="icon-"],
+            [class*=" icon-"] {
+                font-family: 'FontAwesome';
+                font-weight: normal;
+                font-style: normal;
+                text-decoration: inherit;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            .icon-twitter:before {
+                content: "\f099"
+            }
+
+            [class^="icon-"]:before,
+            [class*=" icon-"]:before {
+                text-decoration: inherit;
+                display: inline-block;
+                speak: none;
+            }
+
+            i.icon-facebook {
+                transition: all 1.3s;
+            }
+
+            .icon-facebook:before {
+                content: "\f09a";
+            }
+
+            i.icon-dribbble {
+                transition: all 0.3s;
+            }
+
+            .icon-dribbble:brfore {
+                content: "\f17d";
+            }
+
+            i.icon-linkedi {
+                transition: all 0.3s;
+            }
+
+            .icon-linkedin:before {
+                content: "\f0e1";
+            }
+
+            i.icon-instagram {
+                transition: all 0.3s;
+            }
+
+            .icon-instagram:before {
+                content: "\f16d";
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <!-- 最外层div-->
+            <div class="first_div">
+                <!--第一屏-->
+                <div class="container">
+                    <div class="header">
+                        <div class="logo">
+                            <h1>Exemplary</h1>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav" id="menu">
+                                <li>
+                                    <a href="#" class="active">Home</a>
+                                </li>
+                                <li>
+                                    <a href="Swevices" class="swevices">Swevices</a>
+                                </li>
+                                <li>
+                                    <a href="Work" class="work">Our Work</a>
+                                </li>
+                                <li>
+                                    <a href="About" class="about">About</a>
+                                </li>
+                                <li>
+                                    <a href="Contact" class="contabt">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="container">
+                        <div class="tagline">
+                            <h2>Heyy! We are creative design studio
+                                <br> We create awesomeness by HTML5layouts
+                            </h2>
+                            <div class="under-tagline">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis faucibus leo. Ut ac arcu
+                                    a diam mollis
+                                    <br>semper. In nec blandit nisl, nec cursus lectus. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In
+                                    <br>quis faucibus leo. Ut ac arcu a diam mollis semper. In nec blandit nisl, nec cursus
+                                    lectus.
+                                </p>
+                                <button class="mainbutton">Request A Quote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第二屏-->
+            <div>
+                <div class="services" id="service">
+                    <div class="container">
+                        <div class="section-head">
+                            <h3>Best
+                                <span>Services</span>
+                            </h3>
+                        </div>
+                        <div class="services-list">
+                            <ul>
+                                <li>
+                                    <div class="service-icon icon1"></div>
+                                    <h4>Professional Works</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error <br>sit voluptatem accusantium doloremque<br>laudantium.
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="service-icon icon2"></div>
+                                    <h4>Highly Customizable</h4>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error<br>sit voluptatem accusantium doloremque<br>laudantium.
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="service-icon icon3"></div>
+                                    <h4>Quick Response</h4>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error <br>sit voluptatem accusantium doloremque<br>laudantium.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第三屏-->
+            <div class="desc">
+                <div class="container">
+                    <h3>I want to eat chilly pizza with tomato sauce and cold drinks</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis faucibus leo. Ut ac arcu a diam mollis
+                        semper. In ne nisl, nec cursus lectus.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--第四屏-->
+        <div>
+            <div class="fourth-div">
+                <div class="container">
+                    <div class="fourth">
+                        <h3>Our <span>Works</span>
+                        </h3>
+                    </div>
+                    <div class="picture">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                <img src="../img/unsplash001.jpg">
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="../img/unsplash002.jpg">
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="../img/unsplash003.jpg">
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="../img/unsplash004.jpg">
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="../img/unsplash005.jpg">
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="../img/unsplash006.jpg">
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="../img/unsplash007.jpg">
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="../img/unsplash001.jpg">
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--第五屏-->
+            <div>
+                <div class="work" id="work">
+                    <div class="container">
+                        <div class="section-head">
+                            <h3>About
+                                <span> Creative Studio</span>
+                            </h3>
+                            <div class="work-gallery">
+                                <ul>
+                                    <li>
+                                        <img src="../img/team-member1.jpg">
+                                        <h5>Angela Leo</h5>
+                                        <p>Web developer</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <img src="../img/team-member2.jpg">
+                                        <h5>Angela Leo</h5>
+                                        <p>Web developer</p>
+                                    </li>
+                                    <li>
+                                        <img src="../img/team-member3.jpg">
+                                        <h5>Angela Leo</h5>
+                                        <p>Web developer</p>
+                                    </li>
+                                    <li>
+                                        <img src="../img/team-member4.jpg">
+                                        <h5>Angela Leo</h5>
+                                        <p>Web developer</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第六屏-->
+            <div>
+                <div class="sixth">
+                    <div class="container">
+                        <div class="touch">
+                            <h3>Get In
+                                <span>Touch</span>
+                            </h3>
+                            <div class="contact-section">
+                                <div class="contact-form">
+                                    <form>
+                                        <input type="text" name="Name" placeholder="Name"><br>
+                                        <input type="text" name="Email" placeholder="Email"><br>
+                                        <textarea placeholder="Message" rows="6"></textarea>
+                                        <button type="submit" class="submit">SEND MESSGE</button>
+                                    </form>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="address">
+                                        123689 Pathway, London<br> England
+                                    </p>
+                                    <p class="tel">
+                                        +18965478954
+                                    </p>
+                                    <p class="mail">
+                                        info@Exemplary.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="seventh">
+                    <div class="container">
+                        <div class="footer">
+                            <p class="copyright">
+                                Copyright © Exemplary 2014 by
+                                <a class="credit" href="http://www.htmlayouts.com">HTML5 Layouts</a> "|"
+                                <a href="http://vectortoons.com/">Get Vector Graphics</a>
+                            </p>
+                        </div>
+                        <ul class="socialmedia">
+                            <li>
+                                <a href>
+                                    <i class="icon-teitter">
+                                        ::before
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href>
+                                    <i class="icon-facebook">
+                                        ::before
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href>
+                                    <i class="icon-dribbble">
+                                        ::before
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href>
+                                    <i class="icon-linkedin">
+                                        ::before
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href>
+                                    <i class="icon-instagram">
+                                        ::before
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
